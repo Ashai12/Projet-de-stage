@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #63a0e9;
+    text-align: center;
+    padding: 1rem;
+}
+
+header a {
+    color: white;
+   text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    padding: 0.5rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+nav a:hover {
+    background: #555;
+}
+
+section#introduction {
+     text-align: center;
+     background-color: #eeecec;
+}
+
+section#introduction p {
+    font-size: larger;
+}
+
+section#languages {
+   text-align: center;
+   background-color: #e0dede;
+}
+
+.conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    margin: 25px 25px 25px 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 15px;
+}
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+.card p {
+    color: #3a3939;
+    font-size: medium;
+}
+
+span.css3 {
+    color: #264DE4;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
