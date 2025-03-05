@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <a href="Page d'accueil.html"><h1>Introduction au Développement Web</h1></a> 
+     </header>
+     <nav>
+         <a href="html.html">html</a>
+         <a href="css.html">css</a>
+         <a href="#JavaScript">JavaScript</a>
+         <a href="#php">php</a>
+         <a href="#Sql">Sql</a>
+         <a href="#conseils">Conseil</a>
+         <a href="#Mentorat">Mentorat</a>
+     </nav>
+    <div class="container">
+        <h2>Qu'est-ce que CSS ?</h2>
+        <p>CSS signifie Cascading Style Sheets, qu’on peut traduire par Feuilles de style en cascade. <br>
+            <br>
+            Si HTML est la structure d’un site web (comme les murs et les fondations d’une maison), alors CSS, c’est la peinture, la décoration et l’aménagement intérieur ! <br>
+            <br>
+            Avec CSS, on peut : </p>
+            <br>
+            <ul>
+            <li>Changer les couleurs du texte et du fond</li>
+            <li>Modifier la taille et le style des polices</li>
+            <li>Organiser les éléments (les aligner, les espacer, etc.)</li>
+            <li>Ajouter des animations et des effets sympas</li>
+            </ul><br>
+            <p>En résumé, CSS permet de donner du style aux pages web !</p>
+            
+        
+        <h2>Qui a créé CSS ?</h2>
+        <p>CSS a été inventé par <strong>Håkon Wium Lie</strong>, un informaticien norvégien. <br>
+            <br>
+            En 1994, alors qu’il travaillait avec Tim Berners-Lee (l’inventeur du web), il s’est rendu compte qu’HTML seul ne suffisait pas pour faire des sites web jolis et bien organisés. Il a donc proposé un nouveau langage : CSS ! <br>
+            <br>        
+            Depuis, CSS a beaucoup évolué, et aujourd’hui, on utilise principalement CSS3, qui permet d’ajouter des effets avancés comme des animations, des dégradés et des ombres.
+            
+            </p>
+        
+        <h2>Comment fonctionne CSS ?</h2>
+        <p>CSS fonctionne avec des règles de style qui ciblent des éléments HTML. Une règle CSS est composée de :</p>
+        <ol>
+            <li>Un sélecteur (l’élément HTML à styliser)</li>
+            <li>Des propriétés (ce qu'on veut modifier)</li>
+            <li>Des valeurs (comment on veut modifier)</li>
+        </ol>
+        <p>Exemple :<br>
+        <span id="exemple">p { <br>
+            color: blue; /* Le texte devient bleu */ <br>
+            font-size: 20px; /* La taille du texte est de 20 pixels */ <br>
+        }</span>
+        </p>
+        <p>Ici, on dit que tous les &lt;p&gt; (paragraphes) doivent avoir :</p>
+
+        <ul>
+            <li>Une couleur bleue</li>
+            <li>Une taille de 20 pixels</li>   
+        </ul>
+        
+
+        <h2>Comment utilise-t-on CSS ?</h2>
+        <p>Il y a 3 façons d’ajouter du CSS à une page web :</p>
+        <ol>
+            <li>Dans une balise HTML (peu recommandé) : <span id="exemple">&lt;p style="color: red;"&gt;Texte en rouge&lt;/p&gt;&lt;/li&gt;</span>
+            <li>Dans un fichier &lt;style&gt; dans le fichier HTML : <br><span id="exemple">&lt;style&gt;<br>
+                p  color: green; <br>
+            &lt;/style&gt;</span></li>
+            <li>Dans un fichier CSS séparé (la meilleure pratique) : <br> <span id="exemple">body { <br>
+                background-color: lightgray; <br>
+            } <br></span>
+            Puis on le relie dans HTML avec : <span id="exemple">&lt;link rel="stylesheet" href="styles.css"&gt;</span></li>
+        </ol>
+        
+
+        <h2>Pourquoi apprendre CSS ?</h2>
+        <p>Si tu veux créer un site web, CSS est indispensable ! <br>
+            Même si HTML fonctionne sans CSS, sans lui, une page serait juste du texte noir sur fond blanc, sans mise en forme. <br>
+            <br>
+            Avec CSS, on peut créer des designs modernes, adaptés à tous les écrans (ordinateurs, tablettes, mobiles). Et en plus, c’est intéressant à apprendre !</p>
+        
+
+    </div>
+    <footer>
+        <p>&copy; 2025 - Guide de l'étudiant dev</p>
+    </footer>
+</body>
+</html>
