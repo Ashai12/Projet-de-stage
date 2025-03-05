@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Javascript.css">
+</head>
+<body>
+    <header>
+        <a href="Page d'accueil.html"><h1>Introduction au Développement Web</h1></a> 
+     </header>
+     <nav>
+         <a href="html.html">html</a>
+         <a href="css.html">css</a>
+         <a href="Javascript.html">JavaScript</a>
+         <a href="#php">php</a>
+         <a href="#Sql">Sql</a>
+         <a href="#conseils">Conseil</a>
+         <a href="#Mentorat">Mentorat</a>
+     </nav>
+    <div class="container">
+        <h2>Qu'est-ce que JavaScript ?</h2>
+        <p>JavaScript (souvent abrégé JS) est un langage de programmation qui permet de rendre une page web interactive. Sans lui, un site serait statique : du texte, des images, des liens… mais rien ne bouge.</p>
+        <p>Avec JavaScript, on peut :</p>
+            <ul>
+            <li>Ajouter des animations </li>
+            <li>Créer des menus interactifs</li>
+            <li>Valider des formulaires (comme quand tu oublies un champ et que ça affiche un message)</li>
+            <li>Mettre à jour du contenu sans recharger la page (comme les notifications sur Facebook)</li>
+            <li>Créer des jeux ou des applications web</li>
+            </ul><br>
+            
+        
+        <h2>Qui a créé JavaScript ?</h2>
+        <p>En 1995, un ingénieur appelé <strong>Brendan Eich</strong>, travaillant chez Netscape, devait inventer un langage pour les pages web... en 10 jours seulement ! <br>
+            <br>
+            Résultat : il crée JavaScript, un langage inspiré de plusieurs autres langages (comme Java et C). <br>
+            <br>
+            Au départ, personne ne prenait JavaScript au sérieux... mais aujourd’hui, c’est l’un des langages les plus utilisés dans le monde !
+            </p>
+        
+        <h2>Comment fonctionne JavaScript ?</h2>
+        <p>JavaScript s’exécute directement dans le navigateur (comme Chrome, Firefox, Edge). Il peut aussi être utilisé côté serveur avec Node.js, ce qui permet de créer des applications complètes !</p>
+        <p>Exemple :</p>
+
+        <textarea id="code" placeholder="Écrivez votre code ici...">
+        &lt;script&gt;
+        alert("Bonjour, bienvenue sur mon site !")
+        &lt;/script&gt;
+        </textarea>
+                    <button onclick="executerCode()">Exécuter</button>
+                    <iframe id="resultat"></iframe>
+
+        <h2>Comment utilise-t-on JavaScript ?</h2>
+        <p>Il y a 3 façons d’ajouter du JavaScript dans une page web :</p>
+        <ol>
+            <li>Dans une balise HTML (peu recommandé) : <span id="exemple">&lt;button onclick="alert("Salut !")"&gt;Clique ici &lt;/button&gt;</span>
+            <li>Dans une balise &lt;script&gt; dans le fichier HTML : <br><span id="exemple">&lt;script&gt;<br>
+                console.log("Ceci s'affiche dans la console !") <br>
+            &lt;/script&gt;</span></li>
+            <li>Dans un fichier .js séparé (la meilleure pratique) : <br> <span id="exemple">document.body.style.backgroundColor = "lightblue";</span> <br>
+            Puis on le relie dans HTML avec : <span id="exemple">&lt;script src="script.js"&gt; &lt;/script&gt;</span></li>
+        </ol>
+        
+
+        <h2>Pourquoi apprendre JavaScript ?</h2>
+        <p>JavaScript est partout ! Il est utilisé par 95% des sites web (Google, YouTube, Facebook, Amazon…). <br>
+            <br>
+            C’est un des langages les plus demandés en entreprise, parfait pour une carrière de développeur. <br>
+            <br>      
+            Il permet de tout faire : sites web, applications mobiles, jeux vidéo, intelligence artificielle, etc. <br>
+            </p>
+
+            
+    </div>
+    <footer>
+        <p>&copy; 2025 - Guide de l'étudiant dev</p>
+    </footer>
+    <script>
+        function executerCode() {
+            let code = document.getElementById("code").value;
+            let iframe = document.getElementById("resultat").contentWindow.document;
+            iframe.open();
+            iframe.write(code);
+            iframe.close();
+        }
+    </script>
+</body>
+</html>
