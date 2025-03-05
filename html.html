@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction à HTML</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <header>
+        <a href="Page d'accueil.html"><h1>Introduction au Développement Web</h1></a> 
+     </header>
+     <nav>
+         <a href="html.html">html</a>
+         <a href="#css">css</a>
+         <a href="#JavaScript">JavaScript</a>
+         <a href="#php">php</a>
+         <a href="#Sql">Sql</a>
+         <a href="#conseils">Conseil</a>
+         <a href="#Mentorat">Mentorat</a>
+     </nav>
+    <div class="container">
+        <h2>Qu'est-ce que HTML ?</h2>
+        <p>HTML signifie HyperText Markup Language, ce qui peut paraître compliqué, mais en gros, c'est un langage qui permet de structurer une page web. Grâce à HTML, on peut dire à un navigateur (comme Google Chrome ou Firefox) : <br> </p>
+            <br>
+            <ul>
+            <li>"Voici un titre"</li>
+            <li>"Ici, mets un paragraphe"</li>
+            <li>"Ajoute une image à cet endroit"</li>
+            <li>"Crée un lien vers une autre page"</li>
+            </ul><br>
+            <p>En bref, c'est un peu comme si on écrivait un plan détaillé d'une page web.</p>
+            
+        
+        <h2>Qui a créé HTML ?</h2>
+        <p>HTML a été inventé par <strong>Tim Berners-Lee</strong> en 1991. À l'époque, il travaillait au CERN, un grand centre de recherche scientifique en Suisse. <br>
+        Son but était de permettre aux scientifiques du monde entier de partager facilement des documents et des informations. Il a donc créé le tout premier site web et, avec lui, le premier langage HTML !
+
+            Depuis, HTML a beaucoup évolué. Aujourd'hui, nous en sommes à HTML5, qui permet de faire des pages web encore plus interactives et modernes.</p>
+        
+        <h2>Comment fonctionne HTML ?</h2>
+        <p>HTML est un langage basé sur des balises. Une balise, c'est simplement un mot-clé entouré de <>. Par exemple :</p>
+        
+        <textarea id="code" placeholder="Écrivez votre code ici...">
+&lt;h1&gt;Voici un titre&lt;/h1&gt;
+&lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+&lt;a href="https://developer.mozilla.org/fr/docs/Web/HTML"&gt;Ceci est un lien.&lt;/a&gt;</textarea>
+        <button onclick="executerCode()">Exécuter</button>
+        <iframe id="resultat"></iframe>
+
+        <h2>HTML seul, ça suffit ?</h2>
+        <p>Non, HTML donne la structure, mais pour rendre un site plus joli et interactif, on utilise souvent d'autres langages en complément :</p>
+        <ul>
+            <li>CSS (Cascading Style Sheets) : pour la mise en page, les couleurs, les animations...</li>
+            <li>JavaScript : pour ajouter de l'interactivité (ex : un menu qui s'ouvre, un formulaire dynamique, etc.).</li>
+        </ul>
+        <p>Sans CSS et JavaScript, une page en pur HTML serait assez basique, un peu comme un document Word sans mise en page.</p>
+
+        <h2>Pourquoi apprendre HTML ?</h2>
+        <P>Si tu veux créer un site web, HTML est la base ! Même si tu ne veux pas devenir développeur, comprendre HTML peut être utile, que ce soit pour modifier un blog, optimiser un site, ou même comprendre comment fonctionne le web. <br>
+            <br>
+            Si ça t'intéresse, tu peux commencer facilement en testant quelques lignes de code dans ton navigateur avec la fonction Inspecter l’élément.</P>
+        
+        <script>
+            function executerCode() {
+                let code = document.getElementById("code").value;
+                let iframe = document.getElementById("resultat").contentWindow.document;
+                iframe.open();
+                iframe.write(code);
+                iframe.close();
+            }
+        </script>
+    </div>
+    <footer>
+        <p>&copy; 2025 - Guide de l'étudiant dev</p>
+    </footer>
+</body>
+</html>

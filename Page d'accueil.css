@@ -30,6 +30,10 @@ nav a:hover {
     background: #555;
 }
 
+a {
+    text-decoration: none;
+}
+
 section#introduction {
      text-align: center;
      background-color: #eeecec;
