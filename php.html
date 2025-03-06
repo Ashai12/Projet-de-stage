@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction au PHP</title>
+    <link rel="stylesheet" href="php.css">
+</head>
+<body>
+    <header>
+        <a href="Page d'accueil.html"><h1>Introduction au Développement Web</h1></a> 
+     </header>
+     <nav>
+         <a href="html.html">html</a>
+         <a href="css.html">css</a>
+         <a href="Javascript.html">JavaScript</a>
+         <a href="php.html">php</a>
+         <a href="#Sql">Sql</a>
+         <a href="#conseils">Conseil</a>
+         <a href="#Mentorat">Mentorat</a>
+     </nav>
+    <div class="container">
+        <h2>Qu'est-ce que PHP ?</h2>
+        <p>PHP signifie "<strong>Hypertext Preprocessor</strong>", même si à l'origine, c'était "Personal Home Page". <br>
+            <br>
+            Contrairement à HTML et JavaScript, qui fonctionnent directement dans ton navigateur, PHP s’exécute sur un serveur. Il sert principalement à gérer des données et créer des pages dynamiques. <br>
+            <br>
+            <img src="images/light-bulb.png" alt="Lampe"> En gros, PHP permet à un site de fonctionner comme une vraie application, avec des bases de données et des interactions plus poussées !</p>
+            
+        
+        <h2>Qui a créé PHP ?</h2>
+        <p>PHP a été créé en 1994 par <strong>Rasmus Lerdorf</strong>, un développeur d’origine danoise-canadienne. <br>
+            <br>
+            À la base, il avait développé un petit script en C pour gérer son site personnel. Puis, il l’a amélioré pour permettre aux développeurs de créer des sites dynamiques. Il ne pensait pas que PHP deviendrait l’un des langages les plus utilisés au monde ! </p>
+        
+        <h2>À quoi sert PHP ?</h2>
+        <p>PHP est utilisé principalement pour les sites dynamiques, où les données changent tout le temps.</p>
+        <p>Exemples d'utilisation de PHP :</p>
+        <ul>
+            <li>Gérer des utilisateurs (création de comptes, connexion)</li>
+            <li>Traiter des formulaires (enregistrer des informations, envoyer des emails)</li>
+            <li>Gérer des bases de données (stocker des articles de blog, des produits, etc.)</li>
+            <li>Créer des sites e-commerce</li>
+            <li>Créer des forums et des blogs</li>
+            <li>Construire des API et des applications web</li>
+        </ul>
+        
+        <h2>Comment fonctionne PHP ?</h2>
+        <p>PHP fonctionne côté serveur. Contrairement à JavaScript, qui est exécuté par ton navigateur, PHP s’exécute sur un serveur web, puis envoie un résultat en HTML que le navigateur peut afficher.</p>
+        <p>Exemple :</p>    
+        <p><span id="exemple">&lt;?php <br>
+            echo "Bonjour, bienvenue sur mon site !"; <br>
+          ?&gt;
+          </span></p>
+        <p>Cela affiche simplement :</p>
+        <p>Bonjour, bienvenue sur mon site !</p>
+        <p>Tu remarques que PHP commence toujours par &lt;?php et termine par ?&gt; !</p>
+
+        <h2>PHP et les bases de données</h2>
+        <p>L’un des grands avantages de PHP, c’est qu’il peut se connecter à des bases de données comme MySQL pour stocker et récupérer des informations.</p>
+        <p>Exemple : Récupérer les utilisateurs d’une base de données</p>
+        <p><span id="exemple">&lt;?php <br>
+            $connexion = mysqli_connect("localhost", "root", "", "ma_base"); <br>
+          <br>
+            $resultat = mysqli_query($connexion, "SELECT * FROM utilisateurs"); <br>
+          <br>
+            while ($utilisateur = mysqli_fetch_assoc($resultat)) { <br>
+                echo $utilisateur["nom"] . "<br>"; <br>
+            } <br>
+          ?>
+          </span></p>
+          <p>Ici, PHP récupère tous les noms des utilisateurs enregistrés dans une base de données !</p>
+        
+
+        <h2>Pourquoi apprendre PHP ?</h2>
+        <ul>
+            <li>PHP est utilisé par plus de 75% des sites web qui ont un backend (serveur) !</li>
+            <li>Il permet de créer des sites dynamiques et professionnels.</li>
+            <li>Compatible avec presque tous les hébergements web, et souvent préinstallé.</li>
+        </ul>
+
+            
+    </div>
+    <footer>
+        <p>&copy; 2025 - Guide de l'étudiant dev</p>
+    </footer>
+</body>
+</html>
