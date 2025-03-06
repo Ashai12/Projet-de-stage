@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction à SQL</title>
+    <link rel="stylesheet" href="sql.css">
+</head>
+<body>
+    <header>
+        <a href="Page d'accueil.html"><h1>Introduction au Développement Web</h1></a> 
+     </header>
+     <nav>
+         <a href="html.html">html</a>
+         <a href="css.html">css</a>
+         <a href="Javascript.html">JavaScript</a>
+         <a href="php.html">php</a>
+         <a href="sql.html">Sql</a>
+         <a href="#Mentorat">Mentorat</a>
+     </nav>
+    <div class="container">
+        <h2>Qu'est-ce que SQL ?</h2>
+        <p>SQL signifie "<strong>Structured Query Language</strong>", soit "Langage de requêtes structuré" en français. <br>
+            <br>
+            C'est un langage de programmation conçu pour interagir avec des bases de données. Contrairement à HTML, CSS ou JavaScript, qui s'occupent de l'affichage d'un site web, SQL permet de stocker et manipuler des données en arrière-plan.</p>
+            
+        
+        <h2>Qui a créé SQL ?</h2>
+        <p>SQL a été inventé dans les années 1970 par <strong>Donald D. Chamberlin</strong> et <strong>Raymond F. Boyce</strong>, deux chercheurs d'IBM. Ils travaillaient sur un projet appelé System R, l'un des premiers systèmes de bases de données relationnelles. <br>
+            <br>
+            Le langage s’appelait d’abord SEQUEL, mais pour des raisons légales, il a été renommé SQL. <br>
+            <br>         
+            En 1986, SQL est devenu un standard international, ce qui signifie qu’il est utilisé dans le monde entier et sur différents systèmes comme MySQL, PostgreSQL, SQL Server, Oracle, etc.</p>
+        
+        <h2>Pourquoi SQL est-il important ?</h2>
+        <ul>
+            <li>SQL est utilisé partout ! Les réseaux sociaux, les e-commerces, les applications mobiles, les banques, les hôpitaux… Tous stockent des données dans des bases SQL.</li>
+            <li>Il permet de gérer d'énormes quantités de données. Google, Amazon, Facebook et presque toutes les entreprises l’utilisent !</li>
+            <li>Il est facile à apprendre et ultra puissant. En quelques lignes de code, tu peux récupérer des milliers d'informations en une fraction de seconde.</li>
+        </ul>
+            
+        <h2>Que peut-on faire avec SQL ?</h2>
+        <ul>
+            <li>Créer des bases de données</li>
+            <li>Ajouter des données (insertion)</li>
+            <li>Lire des données (recherche) <img src="images/loupe (1).png" alt="Loupe"></li>
+            <li>Modifier des données</li>
+            <li>Supprimer des données</li>
+            <li>Sécuriser l'accès aux informations</li>
+        </ul>
+
+        <h2>Comment fonctionne SQL ?</h2>
+        <p>SQL fonctionne avec des requêtes : ce sont des commandes qu'on envoie à une base de données.</p>
+        <p>Créer une table pour stocker des utilisateurs :</p>
+        <p><span id="exemple">CREATE TABLE utilisateurs ( <br>
+            id INT PRIMARY KEY AUTO_INCREMENT, <br>
+            nom VARCHAR(50), <br>
+            email VARCHAR(100) <br>
+        );
+        </span></p>
+        <p>Cela crée une table utilisateurs avec trois colonnes : id, nom et email.</p>
+        <br>
+        <p>Ajouter un utilisateur :</p>
+        <p><span id="exemple">INSERT INTO utilisateurs (nom, email) <br> 
+            VALUES ('Alice Dupont', 'alice@example.com');
+            </span></p>
+        <p>Un nouvel utilisateur est ajouté à la base de données.</p>
+        <br>
+        <p>Mettre à jour un utilisateur :</p>
+        <p><span id="exemple">UPDATE utilisateurs <br>
+            SET email = 'nouveau@email.com' <br>
+            WHERE id = 1;
+            </span></p>
+        <p>Change l’email de l’utilisateur ayant id = 1.</p>
+        <br>
+        <p>Supprimer un utilisateur :</p>
+        <p><span id="exemple">DELETE FROM utilisateurs WHERE id = 1;</span></p>
+        <p>Supprime l'utilisateur avec id = 1.</p>
+
+        <h2>Les bases de données SQL populaires</h2>
+        <p>Il existe plusieurs systèmes de gestion de bases de données (SGBD) qui utilisent SQL :</p>
+        <ul>
+            <li><strong>MySQL</strong> → Très utilisé pour les sites web (WordPress, Magento).</li>
+            <li><strong>PostgreSQL</strong> → Puissant et open-source.</li>
+            <li><strong>SQL Server</strong> → Développé par Microsoft, souvent utilisé en entreprise.</li>
+            <li><strong>Oracle Database</strong> → Très performant pour les grandes entreprises.</li>
+            <li><strong>SQLite</strong> → Léger et simple, parfait pour les applications mobiles.</li>
+        </ul>
+        
+
+        <h2>Pourquoi apprendre SQL ?</h2>
+        <ul>
+            <li>C'est facile à apprendre et fonctionne avec tous les langages de programmation (PHP, Python, Java, etc.).</li>
+            <li>Très demandé en entreprise, car toutes les applications modernes utilisent des bases de données.</li>
+            <li>Puissant et rapide : en quelques requêtes, tu peux manipuler des millions de lignes de données.</li>
+            <li>Indispensable pour le développement web, l’analyse de données et la cybersécurité.</li>
+        </ul>
+
+            
+    </div>
+    <footer>
+        <p>&copy; 2025 - Guide de l'étudiant dev</p>
+    </footer>
+</body>
+</html>
